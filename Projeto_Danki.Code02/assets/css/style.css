@@ -1,0 +1,55 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.clear{clear: both;}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header{
+    background: #d6d6d6;
+    padding: 10px 0;
+}
+.logo1{
+    float: left;
+    width: 150px;
+    height: 60px;
+    background-image: url(../img/logo1.png);
+    background-size:100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo2{
+    float: right;
+    width: 150px;
+    height: 60px;
+    background-image: url(../img/logo2.png);
+    background-size:100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
+    }
+    .logo1, .logo2{
+        display: inline-block;
+        float: none;
+    }
+}
