@@ -11,7 +11,7 @@ html, body{
     height: 100%;
 }
 .center{
-    max-width: 1280px;
+    max-width: 1200px;
     padding: 0 2%;
     margin: 0 auto;
 }
@@ -20,10 +20,9 @@ html, body{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2%;
 }
 header{
-    background: rgb(180, 180, 180);
+    background: rgb(212, 212, 212);
     padding: 10px 2% 40px 2%;
 }
 .logo1{
@@ -46,24 +45,22 @@ header{
 }
 section.cover-form{
     width: 100%;
-    padding: 0 2%;
 }
 .bg{
+    position: relative;
     background-image: url(../img/bg-form.jpg);
     background-size: cover;
-    height: 500px;
+    height: 560px;
     background-position: center;
 }
 .form-container{
-    float: right;
-    margin-right: 40px;
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
     width: 400px;
-    height: 110%;
-    position: relative;
-    top: -5%;
+    height: 105%;
     background-color: white;
     box-shadow: 1px 2px 10px 1px rgb(180, 180, 180);
-    z-index: 2;
 }
 .form-container h2{
     font-weight: normal;
@@ -73,17 +70,17 @@ section.cover-form{
     background-color: rgb(210,210,210);
 }
 .form-wrapper:not(:first-child){
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .form-wraper:last-child{
 	margin-top:20px;
 }
 .form-container form{
-    margin-top: 8px;
+    margin-top: 20px;
     padding: 15px;
 }
 .form-container p{
-    font-size: 13px;
+    font-size: 14px;
     color: #525252;
 }
 .form-container form input[type=text]{
@@ -104,29 +101,92 @@ section.cover-form{
     border-radius: 0;
     width: 100%;
 }
+.form-container form input[type=submit]:hover{
+    background-color: rgb(2, 43, 58) ;
+}
 section.chamada{
     width: 100%;
     position: relative;
     text-align: center;
-    display: inline-block;
-    top: -50px;
     z-index: 1;
 }
 section.chamada .container{
     background-color: rgb(209, 178, 155);
-    padding: 50px 0 ;
+    padding: 70px 0 50px 0;
 }
 section.chamada h2{
-    width: 96%;
+    width: 98%;
     max-width: 700px;
     display: inline-block;
     color: rgb(39, 39, 39);
-    font-size: 32px;
+    font-size: 24px;
+    text-transform: uppercase;
     font-weight: normal;
 }
 section.chamada p{
+    width: 98%;
+	max-width: 700px;
+	display: inline-block;
+	margin-top:10px;
+	font-size: 18px;
+	font-weight: normal;
     color: rgb(59, 59, 59);
 }
+div.flex-mosaico{
+    display: flex;
+
+}
+div.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+div.item-2-mosaico{
+    background-color: rgb(59, 137, 165);
+    padding: 60px 40px;
+    width: 40%;
+}
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+footer img{
+    width: 120px;
+}
+footer p{
+    margin-top: 8px;
+    color: rgb(134, 134, 134);
+}
+@media screen and (max-width: 768px){
+    div.flex-mosaico{
+        display: block;
+    }
+    div.item-1-mosaico{
+        padding-top: 80%;
+        width: 100%;
+    }
+    div.item-2-mosaico{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 960px){
+
+	.bg{
+		height: auto;
+		padding: 40px 0;
+		text-align: center;
+	}
+
+	.form-container{
+		height: auto;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+	}
+}
+
+
 @media screen and (max-width: 510px){
     header{
         text-align: center;
