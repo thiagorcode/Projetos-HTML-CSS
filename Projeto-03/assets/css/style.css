@@ -1,0 +1,428 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+html, body{
+    height: 100%;
+}
+.center{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    min-height: 800px;
+    padding:  40px 2%;
+    /*max-height: 700px;*/
+    background-size: cover;
+    background-position: center;
+    background-image: url(/assets/img/capa.png);
+    font-weight: 300;
+}
+header .logo{
+    float: left;
+    background-color: #ccc;
+    width: 160px;
+    height: 40px;
+}
+header nav{
+    float: right;
+}
+header nav.desktop-menu ul{
+    list-style-type: none;
+}
+header nav.desktop-menu li{
+    float: left;
+    padding: 0 20px;
+}
+header nav.desktop-menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+header nav.mobile-menu{
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/menu.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+header nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+header nav.mobile-menu ul{
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    padding: 20px 0;
+    background-color: white;
+    list-style-type: none;
+    text-align: center;
+}
+nav.mobile-menu ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+nav.mobile-menu ul li:hover{
+    background-color: rgb(230, 230, 230);
+}
+nav.mobile-menu ul li a{
+    transition: 0.7s;
+    text-decoration: none;
+    color: black;
+}
+header .chamada-1{
+    max-width: 600px;
+    float: right;
+    margin: 140px 200px;
+}
+header .chamada-1 h2{
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+header .chamada-1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+section.information{
+    width: 100%;
+    background-color: #472562;
+    padding: 0 2%;
+    height: 400px;
+
+}
+section.information .center{
+    max-width: 1000px;
+    height: calc(100% + 30px);
+}
+section.information .text-information{
+    float: left;
+    color: white;
+    width: 50%;
+    margin-top: 40px;
+    padding-left: 65px;
+    position: relative;
+    left:  80px;
+}
+section.information .text-information h2{
+    font-weight: 300;
+    font-size: 26px;
+}
+section.information > .center > .text-information p{
+    margin-top: 30px;
+    font-size: 13px;
+}
+section.information .text-information ul{
+    list-style-position: inside;
+}
+.btn1-texto{
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 30px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 44px;
+    border: 0;
+    color: white;
+
+}
+section.information > .center > .text-information > .btn1-texto p{
+    margin-top: initial;
+}
+section.information .device-section{
+    float: left;
+    width: 50%;
+    height: 440px;
+    position: relative;
+    top: -40px;
+    background-image: url(/assets/img/device.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+section.sessao2{
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: white;
+    text-align: center
+}
+section.sessao2 h2{
+    color: #472663;
+    font-weight: 300;
+}
+section.sessao2 p{
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+}
+section.sessao2 img{
+    width: 100%;
+    position: relative;
+    top: 90px;
+    margin-top: 10px;
+}
+section.sessao2 .center{
+    max-width: 1000px;
+}
+section.sessao3{
+    width: 100%;
+}
+section.sessao3 .box-1{
+    float: left;
+    color: white;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background: #835FA7;
+}
+section.sessao3 .box-1 h2{
+    font-weight: 300;
+    font-style: 300;
+    font-size: 23px;
+}
+section.sessao3 .box-1 p{
+    font-size: 16px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+section.sessao3 .box-1 .wraper-box1{
+    max-width: 400px;
+    float: right;
+    padding-right: 30px;
+    padding-left:30px ;
+}
+section.sessao3 .part2{
+	float: left;
+	width: 50%;
+	padding:140px 0 90px 0;
+	background: white;
+}
+
+section.sessao3 .sobre-autor{
+	float: left;
+	max-width: 600px;
+	padding-left: 30px;
+}
+
+section.sessao3 .titulo-autor{
+	float: left;
+	width: 100%;
+}
+
+section.sessao3 .wraper-titulo-autor{
+	float: left;
+}
+
+section.sessao3 .titulo-autor h2{
+	color: #232323;
+	font-weight: 400;
+	font-size: 21px;
+	padding-right: 20px;
+}
+
+section.sessao3 .titulo-autor p{
+	font-size: 13px;
+	color: #232323;
+	font-style: italic;
+	font-weight: 300;
+}
+
+section.sessao3 .titulo-autor .img-autor{
+	float: left;
+	width: 40px;
+	height:40px;
+	position: relative;
+	top:-4px;
+	border-radius: 20px;
+	background-color: gray;
+}
+
+section.sessao3 .texto-autor{
+	float: left;
+	width: 100%;
+	margin-top:10px;
+}
+
+section.sessao3 .texto-autor p{
+	color: #232323;
+	font-size: 15px;
+}
+
+section.sessao3 .slider-bullets{
+	width: 100%;
+	float: left;
+	padding-left: 30px;
+	margin-top:12px;
+}
+
+section.sessao3 .slider-bullets span{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 8px;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: rgb(200,200,200);
+}
+section.sessao4{
+    background-color: #472563;
+    padding: 100px 0;
+}
+div.form{
+    float: left;
+    width: 50%;
+    color: white;
+}
+div.form h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+div.form p{
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+}
+div.form form{
+    margin-top: 15px;
+}
+div.form form input[type=text], input[type=email], textarea{
+    width: 100%;
+    max-width: 480px;
+    margin-top: 8px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200,200,200);
+}
+div.form form textarea{
+    padding: 15px;
+    height: 160px;
+}
+div.map-wraper{
+    float: left;
+    width: 50%;
+    color: white;
+}
+div.map-wraper h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+@media screen and (max-width: 830px){
+
+	header .chamada-1{
+		max-width: none;
+		width: 100%;
+		text-align: center;
+		float: none;
+		margin:170px 0;
+	}
+
+	header .chamada-1 h2{
+		font-weight: 300;
+		font-size: 30px;
+		padding:0 0px;
+		color: white;
+	}
+
+	header .chamada-1 p{
+		font-size: 15px;
+		color: white;
+		margin-top:10px;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 20px 2%;
+    }
+    header nav.desktop-menu{
+        display: none;
+    }
+    header nav.mobile-menu{
+        display: block;
+    }
+    header .chamada-1{
+        max-width: none;
+        float: none;
+        margin: 100px auto;
+        text-align: center;
+    }
+    header .chamada-1 h2{
+        color: white;
+        font-size: 30px;
+    }
+    header .chamada-1 p{
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+    section.information{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    
+    }
+    section.information .text-information{
+        float: none;
+        width: 100%;
+        margin-top: 0;
+        position: static;
+        display: inline-block;
+        
+    }
+    section.information .text-information ul{
+        display: inline-block;
+        width: auto;
+        margin-top: 15px;
+    }
+    section.information .text-information ul li{
+        float: none;
+        text-align: left;
+    }
+    section.information .device-section{
+        display: none;
+    }
+    section.information .btn1-texto{
+        display: inline-block;
+        margin-top: 30px;
+        line-height: auto;
+    }
+    .sessao2{
+        padding: 40px 2%;
+    }
+
+}
+@media screen and (max-width: 580px){
+    section.sessao3 .part2{
+        width: 100%;
+        padding: 40px 0;
+    }
+    section.sessao3 .box-1{
+        width: 100%;
+        padding: 40px 0;
+    }
+    section.sessao2 img{
+        width: 100%;
+        position: relative;
+        top: 60px;
+        margin-top: 20px;
+    }
+}
